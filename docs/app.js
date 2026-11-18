@@ -26,7 +26,7 @@ try {
     list.append(item);
   }
   status.hidden = list.childElementCount > 0;
-  status.textContent = '아직 등록된 웹사이트가 없어요.';
+  status.textContent = 'No websites have been added yet.';
 } catch {
-  status.textContent = '목록을 불러오지 못했어요. 새로고침해 주세요.';
+  status.textContent = 'Could not load the websites. Please refresh the page.';
 }
