@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jake's web projects, organized by day.">
   <title>jakeweb</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=orbit">
   <script type="module" src="./app.js"></script>
 </head>
 <body>
   <header><a class="brand" href="./">jakeweb<span>.</span></a><a class="new-web" href="https://github.com/RE2031/jakeweb/edit/main/docs/sites.json">+ New Web</a></header>
   <main>
-    <h1>Web Projects</h1>
-    <p class="intro">One web project at a time.</p>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="orbital" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-copy">
+        <h1 id="page-title">Web<br>Projects<span>.</span></h1>
+        <p class="intro">One web project at a time.</p>
+      </div>
+    </section>
     <p id="list-status" role="status">Loading websites…</p>
     <ol id="sites" aria-label="Published websites"></ol>
   </main>
